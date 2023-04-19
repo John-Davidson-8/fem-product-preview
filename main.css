@@ -25,7 +25,7 @@ body {
   5. Improve text rendering
 */
 body {
-  line-height: 1.5;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
 /*
@@ -70,13 +70,11 @@ h6 {
 
 :root {
   /* primary colors */
-  --clr-primary-400: hsl(158, 36%, 37%);
-  --clr-primary-500: hsl(158, 36%, 20%);
-  --clr-secondary-200: hsl(30, 38%, 92%);
-
-  --clr-neutral-900: hsl(212, 21%, 14%);
-  --clr-neutral-400: hsl(228, 12%, 48%);
-  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-1: #3c8067;
+  --clr-2: #f2ebe3;
+  --clr-3: #1c232b;
+  --clr-4: #6c7289;
+  --clr-5: #ffffff;
 
   --ff-notsure: "Fira Code", monospace;
 
@@ -98,8 +96,65 @@ h6 {
 body {
   font-family: var(--ff-base);
   font-weight: var(--fw-regular);
-  color: var(--clr-neutral-400);
   font-size: 0.875rem;
-  background-color: var(--clr-secondary-200);
+  background-color: var(--clr-2);
   min-height: 100vh;
+}
+main {
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+.product {
+  background-color: var(--clr-5);
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-2);
+  max-width: 600px;
+  margin-top: 2rem;
+}
+img {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  box-shadow: var(--shadow-2);
+}
+.product-category {
+  text-transform: uppercase;
+  font-family: var(--ff-base);
+  color: var(--clr-4);
+  font-size: 0.857rem;
+  margin-top: 1.71rem;
+  margin-left: 1.71rem;
+  letter-spacing: 5px;
+}
+.product-title {
+  text-align: left;
+  color: var(--clr-3);
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1.71rem;
+  margin-left: 1.71rem;
+}
+.product-content {
+  text-align: left;
+  font-family: var(--ff-base);
+  color: var(--clr-4);
+  font-weight: var(--regular);
+  margin-bottom: 1.714rem;
+  margin-right: 1.714rem;
+  margin-left: 1.714rem;
+  font-size: 1rem;
+  line-height: 23px;
+}
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.product-price {
 }
