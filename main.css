@@ -109,7 +109,6 @@ main {
   background-color: var(--clr-5);
   overflow: hidden;
   border-radius: 0.5rem;
-  box-shadow: var(--shadow-2);
   max-width: 600px;
   margin-top: 2rem;
 }
@@ -147,7 +146,7 @@ img {
   margin-bottom: 1.714rem;
   margin-right: 1.714rem;
   margin-left: 1.714rem;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 23px;
 }
 .flex-container {
@@ -157,4 +156,17 @@ img {
   align-items: center;
 }
 .product-price {
+  color: var(--clr-1);
+  font-size: 2rem;
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-bold);
+  line-height: 32px;
+  margin-left: 1.8rem;
+  margin-bottom: 1rem;
+}
+.original-price {
+  padding-bottom: 1rem;
+  margin-left: 0.75rem;
+  font-family: var(--ff-base);
+  text-decoration: line-through;
 }
