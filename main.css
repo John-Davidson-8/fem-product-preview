@@ -1,3 +1,21 @@
+:root {
+  /* colors */
+  --clr-primary-400: hsl(158, 36%, 37%);
+  --clr-secondary-200: hsl(30, 38%, 92%);
+
+  --clr-neutral-900: hsl(212, 21%, 14%);
+  --clr-neutral-400: hsl(228, 12%, 48%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  /* font-family */
+  --ff-accent: "Fraunces", serif;
+  --ff-base: "Montserrat", sans-serif;
+
+  /* font-weights */
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -60,113 +78,35 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-/*
-  9. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
-}
 
-:root {
-  /* primary colors */
-  --clr-1: #3c8067;
-  --clr-2: #f2ebe3;
-  --clr-3: #1c232b;
-  --clr-4: #6c7289;
-  --clr-5: #ffffff;
-
-  --ff-notsure: "Fira Code", monospace;
-
-  --ff-accent: "Fraunces", serif;
-
-  --ff-base: "Montserrat", sans-serif;
-
-  --fw-regular: 500;
-  --fw-bold: 700;
-
-  /* box shadow */
-  --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
-}
-
+/* general styling */
 body {
-  font-family: var(--ff-base);
+  font-family: var(--ff-accent);
   font-weight: var(--fw-regular);
   font-size: 0.875rem;
-  background-color: var(--clr-2);
-  min-height: 100vh;
-}
-main {
+  color: var(--clr-neutral-400);
+  background-color: var(--clr-secondary-200);
+  /* for this project only, usually use min-height */
   display: grid;
   place-content: center;
   margin: 1rem;
 }
-.product {
-  background-color: var(--clr-5);
-  overflow: hidden;
-  border-radius: 0.5rem;
-  max-width: 600px;
-  margin-top: 2rem;
-}
-img {
-  border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
-  box-shadow: var(--shadow-2);
-}
-.product-category {
-  text-transform: uppercase;
-  font-family: var(--ff-base);
-  color: var(--clr-4);
-  font-size: 0.857rem;
-  margin-top: 1.71rem;
-  margin-left: 1.71rem;
-  letter-spacing: 5px;
-}
-.product-title {
-  text-align: left;
-  color: var(--clr-3);
-  font-family: var(--ff-accent);
-  font-weight: var(--fw-bold);
-  font-size: 2rem;
-  line-height: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-right: 1.71rem;
-  margin-left: 1.71rem;
-}
-.product-content {
-  text-align: left;
-  font-family: var(--ff-base);
-  color: var(--clr-4);
-  font-weight: var(--regular);
-  margin-bottom: 1.714rem;
-  margin-right: 1.714rem;
-  margin-left: 1.714rem;
-  font-size: 14px;
-  line-height: 23px;
-}
-.flex-container {
+/* utilities */
+.flex-group {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  align-items: center;
 }
-.product-price {
-  color: var(--clr-1);
-  font-size: 2rem;
-  font-family: var(--ff-accent);
-  font-weight: var(--fw-bold);
-  line-height: 32px;
-  margin-left: 1.8rem;
-  margin-bottom: 1rem;
+/* product styles */
+.product {
+  --content-padding: 1.5rem;
+  background-color: var(--clr-neutral-100);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
-.original-price {
-  padding-bottom: 1rem;
-  margin-left: 0.75rem;
-  font-family: var(--ff-base);
-  text-decoration: line-through;
+.product__content {
+  border: 3px solid red;
+  display: grid;
+  gap: 1rem;
+  padding: var(--content-padding);
 }
