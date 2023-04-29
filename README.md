@@ -18,23 +18,16 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 The overview is to build a product preview card component with html and css.
 
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
-
 ### Screenshot
 
-![![Alt text](images/image-product-mobile.jpg)](./screenshot.jpg)
+![mobile image of perfume bottle](images/screenshot-mobile.png)
 
-![Alt text](images/screenshot-desktop.png)
+![desktop image of perfume bottle](images/screenshot-desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://fem-product-preview-edit.netlify.app/)
-- Live Site URL: [Add live site URL here](https://github.com/John-Davidson-8?tab=repositories)
+- Solution URL: https://fem-product-preview-edit.netlify.app/
+- Live Site URL: https://github.com/John-Davidson-8?tab=repositories
 
 ## My process
 
