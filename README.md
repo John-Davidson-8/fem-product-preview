@@ -101,3 +101,5 @@ The reason I watched Kevin was not so much to help me with the general coding of
 - Coding Addict is John Smilga's excellent Youtube channel with many great frontend resources. https://www.youtube.com/@CodingAddict.
 
 - Most of the Git and Github process I have learned from Colte Steele's excellent Udemy course https://www.udemy.com/course/git-and-github-bootcamp/.
+
+- This short Youtube video showed me how to add screenshots to my README file. https://www.youtube.com/watch?v=R6euByfGaN4
